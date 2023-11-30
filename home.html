@@ -87,10 +87,9 @@
   <header>
     <h1>Select your course</h1>
   </header>
-
   <div class="container">
     <p>Which course would you like to get answers of exams/books? </p>
-    <p>WARNING Some of them may be broken wait for us to fix it.</p>
+    <p>Some of them may be broken wait for us to fix it.</p>
     <div class="button-container">
       <button class="button" onclick="showDownloads(1)">1º de ESO</button>
       <button class="button" onclick="showDownloads(2)">2º de ESO</button>
@@ -100,13 +99,10 @@
       <button class="button" onclick="showDownloads('bachillerato')">2º de Bachillerato (NOT WORKING)</button>
     </div>
 
-    <!-- Botones de descarga -->
     <div class="download-container" id="downloadContainer" style="display: none;"></div>
   </div>
-
-  <!-- Sección de Copyright y Términos -->
   <div class="footer-section">
-    <p>&copy;2023 BurlingtonLeaker. Todos los derechos reservados. | <a href="/privacy.html">Política de privacidad</a> | <a href="/terminos-condiciones.html">Términos y condiciones</a></p>
+    <p>&copy;2023 BurlingtonLeaker. All rights reserved. | <a href="/privacy.html">Política de privacidad</a> | <a href="/terminos-condiciones.html">Términos y condiciones</a></p>
   </div>
 
   <script>
@@ -125,7 +121,7 @@
     function createDownloadButton(type, course) {
       var button = document.createElement('button');
       button.className = 'button download-button';
-      button.textContent = 'Descargar ' + type;
+      button.textContent = 'Download ' + type;
       button.onclick = function() {
         downloadFile(type, course);
       };
